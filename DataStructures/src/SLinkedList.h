@@ -11,7 +11,6 @@
 #ifndef _DataStructures_SLinkedList_H_
 #define _DataStructures_SLinkedList_H_
 
-#include <stdint.h>
 
 // SLinkedList class manages the nodes and hold references to the head of the list
 // 
@@ -118,6 +117,11 @@ namespace Sqwack
 		}
 
 		NodePtr GetFirstNode()
+		{
+			return m_Head;
+		}
+
+		const NodePtr GetFirstNode() const
 		{
 			return m_Head;
 		}

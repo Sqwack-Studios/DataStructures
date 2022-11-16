@@ -20,7 +20,7 @@ void PrintVector(const Sqwack::Vector<T>& vector)
 
 
 template<typename T>
-void IterateList(Sqwack::SLinkedList<T>& list)
+void IterateList(const Sqwack::SLinkedList<T>& list)
 {
 	auto ptr = list.GetFirstNode();
 
